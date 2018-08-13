@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css?family=Do+Hyeon|Roboto');
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif, monospace;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Do Hyeon', sans-serif, monospace;
+}
+
+main {
+  margin-bottom: 100px;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.background-blue {
+  background: #114cbf;
+}
+
+.background-orange {
+  background: #ffc353;
+}
+
+.text-dark-blue * {
+  color: #0B378D;
+}
+
+.text-white * {
+  color: white;
+}
+
+.text-orange * {
+  color: #ffc353;
+}
+
+/* Header */
+.site-header {
+  width: 100%;
+  padding: 20px 10px;
+}
+
+.header-content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.brand {
+  margin: 0;
+  padding: 0;
+}
+
+.nav {
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  margin: 0 10px;
+  font-size: 18px;
+  line-height: 40px;
+  font-family: 'Do Hyeon', sans-serif, monospace;
+}
+
+.nav-item:hover {
+  color: #ffc353;
+}
+
+.nav-item:first-of-type {
+  margin-left: 0;
+}
+
+.nav-item:last-of-type {
+  margin-right: 0;
+}
+
+/* About */
+#about {
+  text-align: center;
+  padding: 20px 10px;
+}
+
+.profile-pic {
+  max-width: 100%;
+  width: 300px;
+  border-radius: 5px;
+  -webkit-box-shadow: 3px 3px 13px -5px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 3px 3px 13px -5px rgba(0, 0, 0, 0.75);
+  box-shadow: 3px 3px 13px -5px rgba(0, 0, 0, 0.75);
+}
+
+/* Projects */
+#projects {
+  padding: 0 10px;
+}
+
+.project {
+  max-width: 100%;
+  width: 100%;
+  margin: 20px 0;
+}
+
+.project:first-of-type {
+  margin-top: 0;
+}
+
+.project:last-of-type {
+  margin-bottom: 0;
+}
+
+.project-content {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.project-screenshot {
+  width: 300px;
+  max-width: 100%;
+  margin: 0 10px;
+}
+
+.project > header > * {
+  margin: 0;
+}
+
+.project-links > a:hover {
+  color: #114CBF;
+}
+
+/* Footer */
+.site-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  padding: 20px 10px;
+  font-size: 18px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.footer-link:hover {
+  color: #ffc353;
+}
+
+@media screen and (max-width: 400px) {
+  .footer-content {
+    flex-direction: column;
+  }
+}

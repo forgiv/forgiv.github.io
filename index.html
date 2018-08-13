@@ -2,27 +2,128 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Hiram Cruz | Home</title>
-  <link rel="stylesheet" type="text/css" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hiram Cruz</title>
+
+  <link rel="stylesheet" href="./main.css">
+  <script src="./main.js" defer></script>
+
+  <link rel="apple-touch-icon" sizes="57x57" href="./favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="./favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="./favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="./favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="./favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="./favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="./favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="./favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="./favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="./favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+  <link rel="manifest" href="./favicon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="./favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
 </head>
 
 <body>
-  <main class="App">
-    <h1>hiram_cruz.home</h1>
-    <nav id="nav" class="Nav">
-      <a href="./index.html">Home</a>
-      <a href="./about.html">About</a>
-      <a href="./portfolio.html">Portfolio</a>
-      <a href="./contact.html">Contact</a>
-    </nav>
-    <section class="Home">
-      <h2>.developer</h2>
-      <img src="./profile.jpg" />
-      <p>Browse around, but don't get lost!</p>
+
+  <header class="site-header background-blue text-white">
+    <div class="header-content">
+      <h1 class="brand">Hiram Cruz</h1>
+      <nav class="navbar">
+        <a href="#about" class="nav-item">About</a>
+        <a href="#projects" class="nav-item">Projects</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="about">
+      <img class="profile-pic" src="./profile.png" alt="A picture of me!">
+      <h2>This is me!</h2>
+      <p>
+
+      </p>
+    </section>
+
+    <section id="projects">
+
+      <article class="project">
+        <header>
+          <h3>Bloggy</h3>
+        </header>
+        <div class="project-content">
+          <p>Bloggy is a centralized blogging platform with posts written in markdown language.</p>
+          <img src="https://github.com/forgiv/bloggy-client/blob/master/screenshots/bloggy-client-home.png?raw=true" alt="Screenshot of bloggy home page"
+            class="project-screenshot">
+          <img src="https://github.com/forgiv/bloggy-client/blob/master/screenshots/bloggy-client-blog-post.png?raw=true" alt="Screenshot of a post on bloggy"
+            class="project-screenshot">
+        </div>
+        <footer class="project-links text-dark-blue">
+          <a href="https://github.com/forgiv/bloggy-client">Client Source</a> |
+          <a href="https://github.com/forgiv/bloggy-server">Server Source</a>
+        </footer>
+      </article>
+
+      <article class="project">
+        <header>
+          <h3>Spanish Flash</h3>
+        </header>
+        <div class="project-content">
+          <p>Spanish Flash is an app that uses a flash-card style approach to helping one learn Spanish. The technique is backed
+            up by the spaced repetition algorithm, which is proven to help with learning and enforcing one's understanding.</p>
+          <img src="https://github.com/forgiv/spacedRepetition-client/raw/master/screenshots/login.PNG?raw=true" alt="Screenshot of Spanish Flash login page"
+            class="project-screenshot">
+          <img src="https://github.com/forgiv/spacedRepetition-client/blob/master/screenshots/guess.PNG?raw=true" alt="Screenshot of Spanish Flash main page"
+            class="project-screenshot">
+        </div>
+        <footer class="project-links text-dark-blue">
+          <a href="https://github.com/forgiv/spacedRepetition-client">Client Source</a> |
+          <a href="https://github.com/Dameon1/spacedRepition-server">Server Source</a> |
+          <a href="https://forgiv.github.io/spacedRepetition-client">Live Version</a>
+        </footer>
+      </article>
+
+      <article class="project">
+        <header>
+          <h3>Commit2Win</h3>
+        </header>
+        <div class="project-content">
+          <p>Commit2Win is a web app created with the goal of using competition to encourage better version control usage. By
+            tracking Github contributions, it allows users to compete with each other on a day-to-day basis. Users are further
+            encouraged to compete with a challenge system that allows a user to directly compare their contributions with
+            another.
+          </p>
+          <img src="https://github.com/thinkful-ei20/ghub-tracker-client/blob/master/screenshots/commits.png?raw=true" alt="Screenshot of Commit2Win Commits dashboard"
+            class="project-screenshot">
+          <img src="https://github.com/thinkful-ei20/ghub-tracker-client/blob/master/screenshots/home.png?raw=true" alt="Screenshot of Commit2Win home page"
+            class="project-screenshot">
+        </div>
+        <footer class="project-links text-dark-blue">
+          <a href="https://github.com/thinkful-ei20/ghub-tracker-client">Client Source</a> |
+          <a href="https://github.com/thinkful-ei20/ghub-tracker-server">Server Source</a> |
+          <a href="https://commit2win.herokuapp.com/">Live Version</a>
+        </footer>
+      </article>
+
     </section>
   </main>
+
+  <footer class="site-footer background-blue text-white">
+    <div class="footer-content">
+      <div>Copyright &copy;
+        <span id="copyright-year">2018</span> Hiram Cruz</div>
+      <div>
+        <a class="footer-link" href="mailto:hiram0101@gmail.com" target="_blank">hiram0101@gmail.com</a> |
+        <a class="footer-link" href="https://github.com/forgiv" target="_blank">Github</a> |
+        <a class="footer-link" href="http://linkedin.com/in/forgiv01" target="_blank">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
 </body>
 
 </html>
